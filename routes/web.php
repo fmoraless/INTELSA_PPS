@@ -48,3 +48,4 @@ Route::resource('categorias', App\Http\Controllers\CategoriaController::class)->
 Route::resource('productos', App\Http\Controllers\ProductoController::class)->middleware('auth');
 
 //Route::resource('ventas', App\Http\Controllers\VentaController::class)->middleware('auth');
+Route::resource('providers', App\Http\Controllers\ProviderController::class)->names('providers');
