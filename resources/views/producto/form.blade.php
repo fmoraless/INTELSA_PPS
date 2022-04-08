@@ -1,11 +1,15 @@
 <div class="box box-info padding-1">
     <div class="box-body">
-        
+
        <!-- <div class="form-group">
             {{ Form::label('categoria_id') }}
             {{ Form::text('categoria_id', $producto->categoria_id, ['class' => 'form-control' . ($errors->has('categoria_id') ? ' is-invalid' : ''), 'placeholder' => 'Categoria Id']) }}
             {!! $errors->first('categoria_id', '<div class="invalid-feedback">:message</div>') !!}
         </div>-->
+           <div class="form-group">
+               {{ Form::label('Provider') }}
+               {{ Form::select('provider_id', $providers, $producto->provider_id, ['class' => 'form-control' . ($errors->has('provider_id') ? ' is-invalid' : ''), 'placeholder' => 'Proveedor']) }}
+           </div>
 
         <div class="form-group">
             {{ Form::label('categoria_id') }}
