@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Categoria;
 use App\Models\Producto;
+use App\Models\Provider;
 use Illuminate\Http\Request;
 
 /**
@@ -32,8 +33,9 @@ class ProductoController extends Controller
     public function create()
     {
         $producto = new Producto();
+        $providers = Provider::pluck('name', 'id');
         $categorias= Categoria::pluck('nombre', 'id');
-        return view('producto.create', compact('producto','categorias'));
+        return view('producto.create', compact('producto','categorias','providers'));
     }
 
     /**
