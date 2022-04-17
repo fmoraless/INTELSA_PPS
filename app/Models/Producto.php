@@ -19,7 +19,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Producto extends Model
 {
-    
+    protected $table = 'products';
+
     static $rules = [
 		'categoria_id' => 'required',
 		'nombre' => 'required',
@@ -42,6 +43,6 @@ class Producto extends Model
     {
         return $this->hasOne('App\Models\Categoria', 'id', 'categoria_id');
     }
-    
+
 
 }
