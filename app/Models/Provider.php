@@ -21,4 +21,8 @@ class Provider extends Model
         $this->hasMany(Product::class);
     }
 
+    public function purchases(){
+        return $this->hasMany(Purchase::class);
+    }
+
 }
