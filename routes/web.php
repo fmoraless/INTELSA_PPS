@@ -23,7 +23,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/compras', [App\Http\Controllers\HomeController::class, 'compras'])->name('compras');
+//Route::get('/compras', [App\Http\Controllers\HomeController::class, 'compras'])->name('compras');
+/*Route::get('/purchases/create', [App\Http\Controllers\PurchaseController::class, 'create'])->name('purchase.create');
+Route::get('/purchases', [App\Http\Controllers\PurchaseController::class, 'index'])->name('purchase.index');*/
+Route::resource('/compras',App\Http\Controllers\PurchaseController::class)->names('purchases')->except('edit', 'update', 'destroy');
 
 Route::get('/ventas', [App\Http\Controllers\HomeController::class, 'ventas'])->name('ventas');
 
