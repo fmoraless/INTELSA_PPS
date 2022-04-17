@@ -6,7 +6,7 @@ return [
     'title_prefix' => 'INTELSA | ',
     'title_postfix' => '',
 
-   
+
     'use_ico_only' => true,
     'use_full_favicon' => false,
 
@@ -230,7 +230,7 @@ return [
             'icon_color' => 'yellow',
             'icon' => 'fas fa-fw fa-home' //con esta linea asignamos un icono del repositorio de fontawesome
         ],
-        
+
 
         //Modulos del sidebar
         //administracion------------------------
@@ -238,14 +238,14 @@ return [
             'text' => 'Administracion',
             'icon'=>'fas fa-fw fa-briefcase',
             'icon_color'=> 'red',
-            'submenu'=> 
-            
+            'submenu'=>
+
             [
                     [
                         'text' => ' Nuevo Proveedor',
                         'icon'=>'fas fa-fw fa-truck',
                         'route'  => 'nproveedor'
-                    
+
                     ],
                 [
                     'text' => ' Nuevo Cliente',
@@ -260,9 +260,9 @@ return [
                     'url' => 'categorias'
                 ]
             ]
-        ],        
+        ],
 
-        //Productos--------------------   
+        //Productos--------------------
 
         [
             'text'        => 'Productos',
@@ -279,7 +279,7 @@ return [
                         'icon'=>'fas fa-fw fa-wallet',
                         //'route' => 'nproducto'
                         'url'         => 'productos',
-                    
+
                     ],
                 [
                     'text' => ' Productos en Almacen',
@@ -293,7 +293,7 @@ return [
         //Compras-----------
         [
             'text' => 'Compras',
-            'route'  => 'compras',
+            'route'  => 'purchases.index',
             'icon' => 'fas fa-fw fa-dollar-sign',
             'icon_color'=> 'red',
         ],
@@ -312,17 +312,17 @@ return [
             'text'    => 'Reportes',
             'route'  => 'reportes',
             'icon'    => 'fas fa-fw fa-chart-line',
-            'icon_color'=> 'red',          
-                    
+            'icon_color'=> 'red',
+
         ],
-        
+
         //Configuracion
         [
             'text'    => 'Configuración',
             'route'  => 'configuracion',
-           'icon'=> 'fas fa-fw fa-user-lock',  
-           'icon_color'=> 'red',        
-                    
+           'icon'=> 'fas fa-fw fa-user-lock',
+           'icon_color'=> 'red',
+
         ],
     ],
 
