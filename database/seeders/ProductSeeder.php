@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ProviderSeeder extends Seeder
+class ProductSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class ProviderSeeder extends Seeder
      */
     public function run()
     {
-        //TODO: crear el seeder para proveedores
+        //TODO: crear el seeder para productos
     }
 }
