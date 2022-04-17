@@ -42,7 +42,7 @@
         </div>
     </div>
 @endsection
-@section('scripts')
+@section('js')
     {!! Html::script('melody/js/alerts.js') !!}
     {!! Html::script('melody/js/avgrund.js') !!}
 
