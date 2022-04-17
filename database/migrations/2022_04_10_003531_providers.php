@@ -15,11 +15,13 @@ return new class extends Migration
     {
         Schema::create('providers', function (Blueprint $table) {
             $table->id();
+
             $table->string('name')->unique();
             $table->string('email');
-            $table->string('ruc_number');
-            $table->string('address')->nullable();
+            $table->string('ruc_number');  //esto es el RTN de la compañia o proveedor
+            $table->string('addres')->nullable();
             $table->string('phone');
+
             $table->timestamps();
         });
     }
@@ -31,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('providers');
+        Schema::drop('providers');
     }
 };
