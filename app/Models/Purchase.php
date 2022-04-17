@@ -9,6 +9,15 @@ class Purchase extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'provider_id',
+        'user_id',
+        'purchase_date',
+        'tax',
+        'total',
+        'status',
+        'picture',
+    ];
 
     public function provider(){
         return $this->belongsTo(Provider::class);
